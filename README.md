@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SignSight Vision – Traffic Sign Recognition System
 
 🎯 **Project Goal**: A lightweight autonomous perception prototype optimized for CPU inference on low-end PCs.
@@ -41,3 +42,7 @@ Open your browser and navigate to `http://localhost:8000`.
 
 ## 📄 Resume Description
 *Developed a CPU-optimized Traffic Sign Recognition System using transfer learning with MobileNetV2 on a reduced GTSRB dataset, implementing real-time classification with a modern interactive web interface to simulate autonomous perception modules.*
+=======
+# SignSight-Vision
+SignSight Vision – Traffic Sign Recognition System is a lightweight autonomous perception prototype designed to detect and classify traffic signs using deep learning and computer vision. The system simulates the traffic sign recognition module used in modern Advanced Driver Assistance Systems (ADAS) and autonomous vehicles.
+>>>>>>> 70a54b7f7d25add59b5ee9398880dd632e646249
