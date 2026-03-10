@@ -1,0 +1,19 @@
+image_size: 96
+batch_size: 16
+learning_rate: 0.001
+epochs: 8
+confidence_threshold: 0.6
+num_classes: 12
+classes:
+  - "Speed limit (20km/h)"
+  - "Speed limit (30km/h)"
+  - "Speed limit (50km/h)"
+  - "Speed limit (60km/h)"
+  - "Speed limit (70km/h)"
+  - "Speed limit (80km/h)"
+  - "Stop"
+  - "Yield"
+  - "No entry"
+  - "Turn right ahead"
+  - "Turn left ahead"
+  - "Ahead only"

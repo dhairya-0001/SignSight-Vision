@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignSight Vision System</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <h1 class="fade-in-down">SignSight Vision</h1>
+                <p class="fade-in-up delay-1">Traffic Sign Recognition System</p>
+            </div>
+            <div class="mode-selector fade-in delay-2">
+                <button id="btn-upload" class="active">Image Upload</button>
+                <button id="btn-webcam">Live Webcam</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="upload-section" class="panel slide-in-left active">
+                <div class="drag-drop-area" id="drop-area">
+                    <p>Drag & Drop an image here or click to upload</p>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                    <img id="preview-image" src="" alt="Preview" hidden>
+                </div>
+                <div id="loading" class="spinner" hidden></div>
+            </section>
+
+            <section id="webcam-section" class="panel slide-in-right hidden">
+                <div class="video-container">
+                    <img id="video-feed" alt="Video Feed">
+                </div>
+                <div class="controls">
+                    <button id="start-webcam">Start Camera</button>
+                    <button id="stop-webcam" class="danger">Stop Camera</button>
+                </div>
+            </section>
+
+            <aside id="result-panel" class="panel result-card slide-in-up delay-3">
+                <h2>Prediction Result</h2>
+                <div class="result-details">
+                    <div class="metric">
+                        <span class="label">Traffic Sign</span>
+                        <span id="pred-label" class="value">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Confidence</span>
+                        <div class="progress-bar-container">
+                            <div id="confidence-bar" class="progress-bar"></div>
+                        </div>
+                        <span id="pred-conf" class="value-small">0%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">FPS</span>
+                        <span id="pred-fps" class="value-small">-</span>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="/static/animations.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
